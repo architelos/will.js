@@ -1,0 +1,27 @@
+{
+  "name": "will",
+  "version": "1.0.0",
+  "description": "An assertion library for Node.js, uses the `will` keyword for BDD syntax.",
+
+  "main": "index.js",
+  "type": "module",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/architelos/will.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/architelos/will.js/issues"
+  },
+  "homepage": "https://github.com/architelos/will.js#readme",
+
+  "author": "architelos",
+  "license": "MIT",
+  "keywords": [
+    "assertion",
+    "will",
+    "bdd",
+    "test",
+    "testing"
+  ]
+}
