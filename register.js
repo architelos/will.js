@@ -14,5 +14,5 @@ Object.defineProperty(Object.prototype, "will", {
         });
     },
 
-    "configurable": true
+    configurable: true
 });
