@@ -11,25 +11,123 @@ function Will(actual) {
 }
 
 /**
- * Pass-through properties for a chain:
+ * Pass-through property for a chain.
  * 
+ * Properties:
  * - will
  * - be
  * - at
  * - have
  * - a
  * - an
- * - that
  * - not (inverts the assertion)
  * 
  * @api public
  */
-["will", "be", "at", "have", "a", "an", "that"].forEach((chain) => {
-    Object.defineProperty(Will.prototype, chain, {
-        get: function () {
-            return this;
-        }
-    });
+Object.defineProperty(Will.prototype, "will", {
+    get: function () {
+        return this;
+    }
+});
+
+/**
+ * Pass-through property for a chain.
+ * 
+ * Properties:
+ * - will
+ * - be
+ * - at
+ * - have
+ * - a
+ * - an
+ * - not (inverts the assertion)
+ * 
+ * @api public
+ */
+Object.defineProperty(Will.prototype, "be", {
+    get: function () {
+        return this;
+    }
+});
+
+/**
+ * Pass-through property for a chain.
+ * 
+ * Properties:
+ * - will
+ * - be
+ * - at
+ * - have
+ * - a
+ * - an
+ * - not (inverts the assertion)
+ * 
+ * @api public
+ */
+Object.defineProperty(Will.prototype, "at", {
+    get: function () {
+        return this;
+    }
+});
+
+/**
+ * Pass-through property for a chain.
+ * 
+ * Properties:
+ * - will
+ * - be
+ * - at
+ * - have
+ * - a
+ * - an
+ * - not (inverts the assertion)
+ * 
+ * @api public
+ */
+Object.defineProperty(Will.prototype, "have", {
+    get: function () {
+        return this;
+    }
+});
+
+/**
+ * Pass-through property for a chain.
+ * 
+ * Properties:
+ * - will
+ * - be
+ * - at
+ * - have
+ * - a
+ * - an
+ * - not (inverts the assertion)
+ * 
+ * @api public
+ */
+Object.defineProperty(Will.prototype, "a", {
+    get: function () {
+        return this;
+    }
+});
+
+/**
+ * Pass-through property for a chain.
+ * 
+ * Properties:
+ * - will
+ * - be
+ * - at
+ * - have
+ * - a
+ * - an
+ * - not (inverts the assertion)
+ * 
+ * @api public
+ */
+Object.defineProperty(Will.prototype, "an", {
+    get: function () {
+        return this;
+    }
 });
 
 /**
@@ -272,7 +370,7 @@ Will.prototype.lessThanOrEqualTo = Will.prototype.lessThanOrEqual;
 /**
  * Asserts that an object is an instance of a class.
  * 
- * @param aClass
+ * @param expected
  * @api public 
  */
 Will.prototype.instanceOf = function (expected) {

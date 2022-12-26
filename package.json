@@ -5,6 +5,7 @@
 
   "main": "index.js",
   "type": "module",
+  "types": "./src/will.js",
 
   "repository": {
     "type": "git",
