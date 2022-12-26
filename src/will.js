@@ -116,7 +116,7 @@ Will.prototype.bigint = function () {
  * @api public
  */
 Will.prototype.nan = function () {
-    this.assert(isNan(this.actual), "NaN");
+    this.assert(Number.isNaN(this.actual), "NaN");
 };
 
 /**
